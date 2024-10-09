@@ -1,0 +1,32 @@
+/* p + h2,
+p + h2 + h2 {
+  color: red;
+} */
+
+/* h2 + h2 {
+  color: red;
+} */
+
+/* ul li a[href*="edu.vn"]{
+    color: red;
+} */
+/* .item-1{
+    color: red;
+}
+.item-2{
+    color: blueviolet;
+}
+.item-3{
+    color: yellow;
+}
+.item-4{
+    color: palevioletred;
+}
+[class^="item-"]{
+    border: 1px solid red;
+} */
+
+.content > *{
+    border: 1px solid red;
+
+}

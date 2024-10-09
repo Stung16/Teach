@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+/* .box{
+    background: #000;
+    width: 100vw ;
+    height: 100px;
+} */
+
+/* span {
+  display: inline-block;
+  border: 1px solid red;
+  width: 500px;
+} */
+/*
+repalce
+non-replace
+*/
+/* .content{
+    font-size: 0;
+} */
+ .box .image-box{
+    display: inline-block;
+    width: 30%;
+ }
+
+ .box .image-box img {
+    max-width: 100%;
+    height: auto;
+ }
+
+ .boxa {
+    max-width: 500px;
+    width: 600px;
+    height: 400px;
+    background: red; 
+}

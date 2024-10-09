@@ -1,0 +1,29 @@
+===============Day2================
+
++Nhóm thẻ inline:
+===tạo folder inline_element
+	*thẻ inline không bọc được thẻ block trừ vài trường hợp đặc biệt như thẻ a
+	-thẻ chèn liên kết(<a></a>)  +mặc định chuyển trang mới mà k tạo tag khi truyền link
+				     +trong href có thể nhận đường dẫn tuyệt đối và tương đố
+					+đuongwf dẫn tuyệt đối thì p truyền đủ giao thức k nó sẽ tự hiểu là 1 folder cùng cấp
+					+thuộc tính target = "_blank" hoặc bất kì- mở tap mới
+							   = "_self" hoặc k viết gì thì là tao hiện tại
+					+khi href href = #...(mục lục)
+					+khi để href trống
+	-chèn ảnh +thuộc tính  alt(khi ảnh lỗi thì hiện-tốt cho SEO) (image)
+	-span : ở block có thẻ div ở inline có span không làm thay đổi định trừ can thiệp csss ===> dùng để thay đổi định dang 1 ND nhỏ(có can thiệp css)
+	-thẻ <b> và <strong> === đều giúp in đệm 1 đoạn văn bản (nhưng dùng trong ngữ cảnh khác nhau)
+		+b: gây sự chú ý đơn thuần
+	
+		+strong: k còn sự đơn thuần chỉ sự cấp thiết khẩn cấp nghiêm trọng
+## thị trường tiếng anh sẽ âtm nhiều đến semantic
+
+
+-thẻ i và em giống trên
+-thẻ <u> và <ins>:u là thể hiện đoạn văn bản được gạch chân còn ins là thể hiện đoạn văn bản vừa mới được inssert(tuỳ vào ngữ cảnh)
+=thẻ <s> và <del>: thẻ s thể hiện nội dung không sử dụng được nữa còn del là xoá đi rồi
+-thẻ sub và sup thể hiện công thức toán học sub là thể hiện mũ trên còn sup là dưới
+=thẻ code <code>
+=thẻ table
+	+thuộc tính trong thẻ td-colspan là gộp hàng
+	+			 -rowspan là gộp cột

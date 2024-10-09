@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        outline: none;
+      }
+      .image {
+        border: 1px solid red;
+        padding: 20px;
+        width: 500px;
+        margin: 30px auto;
+      }
+      .image::after{
+        content: "";
+        display: block;
+        clear: both;
+      }
+      .image img {
+        display: block;
+        float: left;
+        margin-right: 10px;
+        border-radius: 50%;
+        shape-outside: circle(50%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="image">
+      <img src="https://picsum.photos/200" alt="" />
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis cum quae
+      quis minus magnam rem ipsam aliquam dicta laboriosam voluptas, ipsum odit
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo id atque, animi, a harum rem blanditiis delectus, consequuntur ipsam sequi eaque illum necessitatibus esse. Voluptatum illum et labore officia omnis.
+  </body>
+</html>

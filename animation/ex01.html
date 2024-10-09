@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=Ư, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .box {
+        border: 1px solid red;
+        width: 300px;
+        height: 300px;
+        margin: 30px auto;
+        position: relative;
+      }
+      @keyframes move {
+        from {
+          left: 0;
+          rotate: 0deg;
+        }
+
+        50% {
+          left: calc(50% - 40px);
+          rotate: 180deg;
+        }
+        to {
+          left: calc(100% - 40px);
+          rotate: 360deg;
+        }
+      }
+      .box span {
+        width: 40px;
+        height: 40px;
+        display: block;
+        background: green;
+        position: absolute;
+        top: 0;
+        animation: move 1s linear infinite;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <span></span>
+    </div>
+  </body>
+</html>

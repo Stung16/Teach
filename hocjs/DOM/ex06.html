@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .modal {
+        width: 70vw;
+        position: fixed;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 50px;
+        z-index: 5;
+        background-color: #ddd;
+      }
+      .modal-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #d33;
+      }
+      .modal-header > span {
+        width: 30px;
+        height: 30px;
+        background-color: aliceblue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 99px;
+      }
+      .ovelay {
+        position: fixed;
+        inset: 0;
+        opacity: 0.6;
+        background: var(--Black-W0, #212322);
+        z-index: 4;
+      }
+      .modal-box {
+        display: none;
+      }
+      .modal-box.active {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <button class="btn">open</button>
+    <div class="modal-box">
+      <div class="modal">
+        <div class="modal-header">
+          <h2>modal title</h2>
+          <span>&times;</span>
+        </div>
+        <div class="modal-body">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis iusto
+          aspernatur nostrum quae asperiores sint, maxime enim corrupti
+          recusandae eum qui in nemo. Magni nulla hic quia ad est vel.
+        </div>
+      </div>
+      <div class="ovelay"></div>
+    </div>
+    <script src="./js/ex06.js"></script>
+  </body>
+</html>

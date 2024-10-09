@@ -1,0 +1,48 @@
+.title{
+    cursor: pointer;
+}
+/* .title:hover{
+    color: blue;
+}
+.title:active{
+    color: aqua;
+    user-select: none;
+} */
+/* .input_form:focus {
+    background: red;
+} */
+/* 
+#hover và active tồn tại trong tất cả các thẻ 
+#focus tồn tại trong form
+
+? lsao đêr focus tồn tại trong tất cả các thẻ
+*/
+
+/* .title:focus {
+    color: red;
+} */
+
+/* để focus tồn tại trong tất cả các thẻ thì thêm thuộc tính tabindex */
+
+
+/* .input_form:checked{
+
+} */
+
+/* .input_form:disabled{
+    border:  1px solid red;
+} */
+
+/* .product h2:not(.active) {
+    color: red;
+} */
+ /* .father h2:first-of-type {
+    color: red;
+ }
+ .father h2:last-of-type {
+    color: blue;
+ } */
+
+ .father h2:nth-child(2n + 1) {
+    color: red;
+ }

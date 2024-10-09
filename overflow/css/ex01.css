@@ -1,0 +1,13 @@
+.box{
+    width: 200px;
+    height: 200px;
+    border: 1px solid rgb(255, 0, 0);
+    /* overflow: scroll; */
+    /* lúc nào cũng xhien 2 thanh cuộn */
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.box h1{
+    width: 300px;
+    border: 1px solid black;
+}

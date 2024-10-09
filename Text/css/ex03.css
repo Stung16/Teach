@@ -1,0 +1,14 @@
+/* 
+letter-spacing và word-spacing 
+*/
+
+.box {
+    /* letter-spacing: 5px; */
+    /* khoảng cách giữa các ký tự */
+
+    /* word-spacing: 5px; */
+    /* khoảng cách giữa các từ */
+}
+.box {
+    text-align: center;
+}

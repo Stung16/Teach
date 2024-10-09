@@ -1,0 +1,25 @@
+/* 
+    #biến toàn cục(global variable)
+        +có thể gọi ở bất kỳ đâu
+        +dùng để khai báo cho những thuộc tính sử dụng nhiều lần hoặc có thể thay đổi nhiều lần
+        +khai báo biến bắt đầu bằng '--'
+        +sử dụng biên thì dùng var(tenbien)
+        +:root chỉ là 1 lớp giả của html những k dùng để thay thể html mà nó dùng 
+        để để khai báo global variable
+    #biến cục bộ(local variable)
+        +Biến cục bộ nó được khai báo trong 1 selector mong muốn
+*/
+
+:root {
+  --color: orange;
+}
+.box {
+  --color-hover: red;
+}
+.box h2 {
+  color: var(--color);
+}
+
+.box h2:hover {
+  color: var(--color-hover);
+}

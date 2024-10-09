@@ -1,0 +1,30 @@
+/* .pseudo_elemnt::after{
+    content: '';
+}
+
+.pseudo_elemnt::before{
+    content: 'B';
+} */
+
+/* theo chuẩn CSS3 thành phần giả thì ":"
+lớp giả "::"
+*/
+.paragrap::first-line{
+    color: red;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.paragrap::first-letter{
+    color: black;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.paragrap::selection {
+    color: yellow;
+    background: black;
+}
+.input1::placeholder{
+    color: red;
+}

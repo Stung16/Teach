@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .preloader {
+        position: fixed;
+        inset: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #fff;
+        z-index: 99999;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <div class="preloader">
+      <span>Đang tải ...</span>
+    </div>
+    <h1 class="title">học lập trình</h1>
+    <video
+      src="https://file-examples.com/storage/fedb2037666703d35a4b831/2017/04/file_example_MP4_1920_18MG.mp4"
+      controls
+      width="300"
+    ></video> -->
+    <!-- <input type="text" class="name" placeholder="vui lòng nhập..." /> -->
+    <form
+      action="https://api-gateway.fullstack.edu.vn/action_page.php"
+      class="login-form"
+    >
+      <div>
+        <label for="">email</label>
+        <input type="email" name="email" class="email" placeholder="email..." />
+      </div>
+      <div>
+        <label for="">password</label>
+        <input
+          type="password"
+          name="password"
+          class="password"
+          placeholder="password..."
+        />
+      </div>
+      <div>
+        <label for="">
+          <input type="checkbox" name="remember" value="1" />
+          Remember me
+        </label>
+      </div>
+      <button type="submit">Login</button>
+    </form>
+    <script src="./js/ex15.js"></script>
+  </body>
+</html>
+<!-- yêu cầu có bất kỳ sự thay đổi nào hoặc load trang sẽ hiện thông báo  -->

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .btn {
+        padding: 10px 30px;
+        display: block;
+        margin: 30px auto;
+        background: green;
+        color: #fff;
+        border: none;
+        outline: none;
+        border-radius: 99px;
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+      }
+      .btn span {
+        position: relative;
+        z-index: 1;
+      }
+      .btn::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 100%;
+        background: red;
+        border-radius: 99px;
+        transition: right 0.3s linear;
+      }
+      .btn:hover::before {
+        right: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <button class="btn"><span>đăng ký khoá học</span></button>
+  </body>
+</html>

@@ -1,0 +1,28 @@
+/* .color{
+    color: red;
+} */
+
+/* 
+color name
+hex #6kytu
+rgb()
+hsl()
+*/
+
+/* kế thừa
+    -initial:kế thừa của trình duyệt
+    -inherit: kế thừa của thẻ cha
+*/
+
+body {
+  color: rgb(18, 226, 18);
+}
+
+.box .content h2 {
+  color: red;
+}
+.box .content h2:hover {
+  color: inherit;
+}
+
+

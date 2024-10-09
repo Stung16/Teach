@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      .box {
+        border: 1px solid red;
+        width: 300px;
+        margin: 30px auto;
+      }
+
+      .box ul {
+        /* list-style-position: inside; */
+        /* list-style-type: upper-alpha; */
+        list-style: none;
+      }
+      /* .box ul li {
+        background: url("./images/abc.png") no-repeat left center / 16px;
+        padding-left: 16px;
+
+      } */
+      .box ul li::before {
+        content: "";
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        background: url("./images/abc.png") no-repeat left center / 16px;
+        /* float: left; */
+        /* margin-top: 3px; */
+        vertical-align: middle;
+
+      }
+      .box ul li{
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <ul>
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+        <li>item 4</li>
+        <li>item 5</li>
+      </ul>
+    </div>
+  </body>
+</html>

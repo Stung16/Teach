@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .songs {
+        width: 300px;
+        border: 1px solid red;
+        margin: 30px 0;
+        padding: 15px;
+        counter-reset: song-item;
+      }
+      .songs .song-item {
+        padding: 10px 0;
+        border-bottom: 1px solid #ddd;
+        counter-increment: song-item;
+      }
+      .songs .song-item::before {
+        content: "#" counter(song-item);
+        width: 30px;
+        height: 30px;
+        display: block;
+        float: left;
+        background-color: red;
+        color: #fff;
+        border-radius: 50%;
+        line-height: 30px;
+        text-align: center;
+        margin-right: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="songs">
+      <div class="song-item">
+        <h2>bài hát1</h2>
+        <p>ca sĩ: abc</p>
+      </div>
+      <div class="song-item">
+        <h2>bài hát1</h2>
+        <p>ca sĩ: abc</p>
+      </div>
+      <div class="song-item">
+        <h2>bài hát1</h2>
+        <p>ca sĩ: abc</p>
+      </div>
+      <div class="song-item">
+        <h2>bài hát1</h2>
+        <p>ca sĩ: abc</p>
+      </div>
+    </div>
+  </body>
+</html>

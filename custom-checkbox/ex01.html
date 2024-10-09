@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .check-box {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        background-color: gray;
+        position: relative;
+        user-select: none;
+        margin-left: 30px;
+      }
+      .check-box::before {
+        display: none;
+        content: "";
+        position: absolute;
+        width: 5px;
+        height: 10px;
+        border: red solid;
+        border-width: 0px 1px 1px 0px;
+        rotate: 45deg;
+        left: 35%;
+        top: 15%;
+      }
+      input[type='checkbox']:checked + label .check-box::before {
+        display: block;
+        border-color: #fff;
+      }
+      input[type='checkbox']:checked + label .check-box {
+        background-color: aqua;
+      }
+
+      input[type='checkbox']:disabled + label {
+        color: gray;
+    }
+    </style>
+  </head>
+  <body>
+    <div class="checkbox">
+      <input type="checkbox" id="checkbox1" hidden />
+      <label for="checkbox1">
+        <span class="check-box"></span>
+        checkbox1
+      </label>
+      <input type="checkbox" id="checkbox2" hidden disabled/>
+      <label for="checkbox2">
+        <span class="check-box"></span>
+        checkbox1
+      </label>
+
+      <input type="checkbox" id="checkbox3" hidden disabled checked/>
+      <label for="checkbox3">
+        <span class="check-box"></span>
+        checkbox1
+      </label>
+
+      <!-- <label for="checkbox3">
+        <input type="checkbox" id="checkbox3" />
+        checkbox3
+      </label> -->
+    </div>
+  </body>
+</html>

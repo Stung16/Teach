@@ -1,0 +1,13 @@
+===============Day1============
+
+##Chuẩn bị
+	+Cài đặtt VS Code + tiện ích
+	+Cài Git 
+	+dky git nộp btap
+	+deloy gitpage
+	+clone code
+##Nd chính  
+	+Lập trình web là gì(PP)
+	+Ngôn ngữ Đánh dấu HTML(PP)
+		-Giới thiệu 2 mhoms thẻ inline và block
+			--Nhóm block: heading + p + ... xe, bài 2.4

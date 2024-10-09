@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../inline_element"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "pseudo"
+	}
+}

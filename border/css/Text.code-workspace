@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "../../Text"
+		},
+		{
+			"path": "../../background"
+		},
+		{
+			"path": ".."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "border"
+	}
+}

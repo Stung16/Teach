@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        width: 100vw;
+        height: 100vh;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .overlay{
+        position: fixed;
+        inset: 0;
+        background: #00000048;
+      }
+      .content {
+        width: 500px;
+        position: absolute;
+        background: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <div class="overlay"></div>
+      <div class="content">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae eaque
+        obcaecati cupiditate eligendi aperiam fugiat, ut delectus laudantium
+        blanditiis accusantium numquam, repellat quo deleniti corporis, pariatur
+        consequuntur! Ea, voluptatibus sint?
+      </div>
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente molestias a ut natus, voluptates cum perferendis facere ducimus. Nostrum harum quis nisi itaque veniam a suscipit rem cum. Cumque, quasi.</p>
+  </body>
+</html>
+<!-- nếu z-index mà để âm sẽ k dùng được js để bắt được sự kiên
+ j -->

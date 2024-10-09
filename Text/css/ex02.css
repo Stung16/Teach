@@ -1,0 +1,42 @@
+/* html {
+  font-size: 16px;
+}
+body {
+  font-size: 1rem;
+}
+.box {
+  font-size: 1.1em;
+}
+.box .content {
+  font-size: 1.1em;
+} */
+
+/* font-size: 18px ; */
+/* line-height: 16px; */
+/* mặc định của trình duyệt font-size = 16px */
+
+/* 
+    thẻ cha không có can thiệp về font-size thì 1em = 16px(mặc định của trình duyệt) 
+*/
+
+@font-face {
+  font-family: Poppins;
+  src: url(../font/Poppins-Light.ttf);
+}
+@font-face {
+  font-family: Poppins;
+  src: url(../font/Poppins-Medium.ttf);
+}
+@font-face {
+  font-family: Poppins;
+  src: url(../font/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url(../font/Poppins-SemiBold.ttf);
+  }
+.box .content p {
+  font-family: Poppins, sans-serif;
+  font-weight: 200;
+}

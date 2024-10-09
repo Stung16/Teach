@@ -1,0 +1,4 @@
+.title {
+    display: inline-block;
+    animation: flip 1s linear infinite;
+}

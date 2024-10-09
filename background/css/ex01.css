@@ -1,0 +1,24 @@
+/* 
+    -background-color
+    -background-image
+    -background-repeat
+    -background-size
+    -background-position
+    -background-attachment
+    -background
+*/
+
+body {
+  height: 2000px;
+  /* 
+  background-color: aqua;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url(../images/abc.jpg);
+
+  background-attachment: fixed; */
+  background: red url(../images/abc.jpg) no-repeat left top / 300px fixed;
+}
+p {
+  background-color: antiquewhite;
+}

@@ -1,0 +1,31 @@
+/* * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.title {
+  color: blue;
+}
+#production {
+}
+
+.product_title{
+
+}
+.product .product_title {
+
+}
+.product .product_link {
+
+}
+.product >.product_title {
+
+}
+
+input[checked='true'] {
+
+} */
+
+.title > h2 {
+  color: brown;
+}

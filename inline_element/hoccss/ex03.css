@@ -1,0 +1,25 @@
+/* li > a {
+    color: red;
+} */
+/* .menu > li > a {
+    color: red;
+
+} */
+/* h1.title {
+    color: red;
+
+}
+h2.title {
+color: blue;
+} */
+
+h1.first.title {
+  color: red;
+}
+
+h2.title.last {
+  color: blue;
+}
+/* nếu css dùng tagName thì tagName phải đứng đầu
+còn các class hoặc id thì không cần theo thứ tự
+*/

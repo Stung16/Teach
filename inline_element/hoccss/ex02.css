@@ -1,0 +1,11 @@
+p ~ ul,p ~ .children ul {
+    color: red;
+    
+}
+.pesudo_element::after{
+    content: '1';
+}
+
+.pesudo_element::before{
+    content: '2';
+} 

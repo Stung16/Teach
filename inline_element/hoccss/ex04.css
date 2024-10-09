@@ -1,0 +1,8 @@
+/* .content h1 ~ h2,
+.title {
+  color: red;
+} */
+
+.todos input:checked ~ span {
+  color: red;
+}
