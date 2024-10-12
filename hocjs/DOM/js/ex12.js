@@ -108,7 +108,6 @@ closeBtn.addEventListener("click", function () {
   karaoke.classList.remove("show");
   playerWrap.classList.remove("bottom");
 });
-console.log(lyric);
 
 var currentScreen;
 
@@ -172,14 +171,19 @@ var handleColor = function (currentTime) {
     if (startTime && endTime && currentTime >= startTime) {
       //So sánh current với startTime của từng từ -> Biết được đang hát tới từ nào trong 1 câu
       var words = JSON.parse(sentence.dataset.words);
+      console.log(words);
 
       var result = words[0];
 
       words.forEach(function (item, index) {
-        if (index === 0) {
+        if (currentTime >= item.startTime) {
           result = words[0];
-        } else if (currentTime > item.endTime && index > 0) {
+        }
+        if (currentTime > item.startTime && currentTime < item.endTime) {
           result = words[index];
+        }
+        if (currentTime <= item.endTime) {
+          result = words[words.length - 1];
         }
       });
 
@@ -189,7 +193,7 @@ var handleColor = function (currentTime) {
       var sentenceTime = endTime - startTime;
 
       //Tính thời gian của từ với thời gian bắt đầu của câu
-      var time = endTimeResult - startTime + 12;
+      var time = endTimeResult - startTime;
       // console.log(endTimeResult, endTime);
 
       var rate = (time * 100) / sentenceTime;
@@ -198,6 +202,7 @@ var handleColor = function (currentTime) {
       sentence.children[0].style.transition = `width ${
         result.endTime - result.startTime
       }ms linear`;
+      console.log(result);
     }
   });
 };
