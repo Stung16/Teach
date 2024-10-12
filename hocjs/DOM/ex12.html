@@ -149,6 +149,91 @@
       .player-wrap.bottom .progress-bar .progress span {
         background: #fff;
       }
+      .karaoke {
+        padding: 15px 0;
+      }
+
+      .karaoke .play {
+        background: blueviolet;
+        color: #fff;
+        padding: 5px 10px;
+        cursor: pointer;
+        display: block;
+        margin: 0 auto;
+        border: 0;
+      }
+
+      .karaoke .karaoke-inner {
+        background: blueviolet;
+        color: #fff;
+        font-size: 2.5rem;
+        font-weight: bold;
+        position: fixed;
+        inset: 0;
+        z-index: 100;
+        top: 100%;
+        transition: top 0.4s ease;
+      }
+
+      .karaoke.show .karaoke-inner {
+        top: 0;
+      }
+
+      .karaoke .karaoke-heading {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 0;
+      }
+
+      .karaoke .karaoke-heading {
+        font-size: 1.5rem;
+      }
+
+      .karaoke .karaoke-heading .close {
+        cursor: pointer;
+      }
+
+      .karaoke .karaoke-content {
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      }
+
+      .karaoke .karaoke-content p {
+        margin: 10px 0;
+        position: relative;
+        white-space: nowrap;
+      }
+
+      .karaoke .karaoke-content p span {
+        position: absolute;
+        display: flex;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 0;
+        overflow: hidden;
+        color: yellowgreen;
+        text-align: left;
+      }
+
+      .player-wrap.bottom {
+        position: fixed;
+        bottom: 10px;
+        left: 0;
+        right: 0;
+        z-index: 101;
+        color: #fff;
+      }
+
+      .player-wrap.bottom .progress-bar .progress span {
+        background: #fff;
+      }
     </style>
     <link
       rel="stylesheet"
@@ -159,21 +244,40 @@
     />
   </head>
   <body>
-    <div class="container">
-      <div class="play-btn">
-        <i class="fa-solid fa-play"></i>
+    <div class="player-wrap">
+      <div class="container">
+        <div class="play-btn">
+          <i class="fa-solid fa-play"></i>
+        </div>
+        <div class="player">
+          <span>00:00</span>
+          <div class="progress-bar">
+            <div class="progress">
+              <span></span>
+            </div>
+          </div>
+          <span>00:00</span>
+        </div>
       </div>
-      <div class="player">
-        <span>00:00</span>
-        <div class="progress-bar">
-          <div class="progress">
-            <span></span>
+    </div>
+    <div class="karaoke">
+      <button class="play">Hát karaoke</button>
+      <div class="karaoke-inner">
+        <div class="container">
+          <div class="karaoke-heading">
+            <span class="close">
+              <i class="fa-solid fa-angle-down"></i>
+            </span>
+          </div>
+          <div class="karaoke-content">
+            <p>Vừa hận vừa yêu</p>
+            <p>Ca sỹ: Trung Tự</p>
           </div>
         </div>
-        <span>00:00</span>
       </div>
     </div>
     <audio class="audio" src="./mp3/vuahanvuayeu.mp3"></audio>
+    <script src="./js/lyric.js"></script>
     <script src="./js/ex12.js"></script>
   </body>
 </html>
