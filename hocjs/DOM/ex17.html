@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      body {
+        height: 2000px;
+      }
+      .header {
+        padding: 10px 0;
+        text-align: center;
+      }
+      .header nav {
+        height: 20px;
+        background-color: greenyellow;
+        color: #fff;
+      }
+      .header nav.fixed {
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+      }
+      section {
+        min-height: 100vh;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <h1 class="title">Event Scroll</h1>
+    <button class="top">top</button> -->
+    <header class="header">
+      <h1>header</h1>
+      <nav>
+        <a href="#hero">about-us</a>
+        <a href="#resgiter">resgiter</a>
+      </nav>
+    </header>
+    <main>
+      <section id="hero">
+        <h2>abc</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
+          dolorum voluptates quam quasi, est aperiam reprehenderit aliquid, nemo
+          inventore labore excepturi velit. Unde, officia provident ratione
+          facilis ipsam dolores! Placeat!
+        </p>
+      </section>
+      <section id="resgiter">
+        <h2>abcdfe</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
+          dolorum voluptates quam quasi, est aperiam reprehenderit aliquid, nemo
+          inventore labore excepturi velit. Unde, officia provident ratione
+          facilis ipsam dolores! Placeat!
+        </p>
+      </section>
+    </main>
+    <script src="./js/ex17.js"></script>
+  </body>
+</html>
